@@ -14,7 +14,7 @@
 <div class="layout">
     <Header />
 
-    <main>
+    <main class="main-layout">
         <slot />
     </main>
 
@@ -33,6 +33,12 @@
 
 	main {
 		padding-block: var(--size-9);
+	}
+
+	.main-layout {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
 	@media (min-width: 1440px) {
