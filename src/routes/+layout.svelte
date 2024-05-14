@@ -28,7 +28,7 @@
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		margin-inline: auto;
-		padding-inline: var(--size-7);
+		padding-inline: var(--size-10);
 	}
 
 	main {
@@ -36,9 +36,7 @@
 	}
 
 	.main-layout {
-		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
 	@media (min-width: 1440px) {

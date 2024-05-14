@@ -33,8 +33,9 @@
 
 <style>
 	article {
-		max-inline-size: var(--size-content-10);
+		/* max-inline-size: var(--size-content-4); */
 		margin-inline: auto;
+		display: inline-block;
 	}
 
 	h1 {

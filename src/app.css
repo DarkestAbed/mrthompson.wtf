@@ -144,7 +144,7 @@ h1 {
 }
 
 .prose :is(ul, ol) {
-	list-style-type: '🔥';
+	list-style-type: '⚙️';
 	padding-left: var(--size-5);
 }
 
@@ -154,7 +154,7 @@ h1 {
 }
 
 .prose pre {
-	max-inline-size: 100%;
+	max-inline-size: 90%;
 	padding: 1rem;
 	border-radius: 8px;
 	tab-size: 2;
