@@ -25,6 +25,9 @@
 <style>
 	nav {
 		padding-block: var(--size-7);
+		/* position: fixed; */
+		/* top: 0; */
+		/* background-color: black; */
 	}
 
 	.links {
