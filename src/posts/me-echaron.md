@@ -29,4 +29,4 @@ En ese ambiente de trabajo, conocí personalmente al CTO de la empresa, un perso
 
 En esta cultura hostil, y con la sensación de tener poder dada mi posición política en la compañía, me enfrenté a algunas personas que no compartían mi visión tanto del proceso de desarrollo, como de los cambios culturales que se fueron introduciendo a la compañía. A modo de anécdota, y en algo que para mí es tremendamente decidor de la visión de la empresa, el CEO nos dijo <em>si alguien les dice que "no", eso quiere decir "sí". Es nuestra labor revertir los "no"s que nos den</em>.
 
-(Además de sonar terriblemente _rapey_ y muy, **muy** desconectado de la cultura millennial a la que predicaba, me parece una TERRIBLE práctica de negocios decir "no vamos a aceptar un no". Como si el mundo )
+(Además de sonar terriblemente _rapey_ y muy, **muy** desconectado de la cultura millennial a la que predicaba, me parece una TERRIBLE práctica de negocios decir "no vamos a aceptar un no". Como si el mundo no hubiera aprendido lo que es el feminismo en los últimos 15 años, y no estuvieran avanzando los valores )
