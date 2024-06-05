@@ -6,5 +6,5 @@ categories:
   - sexualidad
   - orientacion
   - reflexiones
-published: true
+published: false
 ---
