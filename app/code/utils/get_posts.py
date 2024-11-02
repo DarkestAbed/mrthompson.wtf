@@ -2,12 +2,13 @@
 
 from frontmatter import load
 from markdown import markdown
+from operator import itemgetter
 from os import getcwd, listdir
 from os.path import basename, exists, join
 
 
 def get_md_file_list() -> list[str]:
-    POSTS_PATH: str = join(getcwd(), "static", "posts")
+    POSTS_PATH: str = join(getcwd(), "app", "static", "posts")
     if not exists(POSTS_PATH):
         raise FileNotFoundError(f"Path with posts '{POSTS_PATH}' is not found on server")
     else:
@@ -45,13 +46,22 @@ def read_markdown(path: str) -> str:
 
 
 def parse_post(path: str) -> list[str, str, str]:
+
+    def get_post_link(path: str) -> tuple[str, str]:
+        file_name: str = basename(path)
+        post_link: str = file_name.replace(".md", "")
+        return (file_name, post_link)
+
     if not exists(path):
         raise FileNotFoundError(f"Post located on '{path}' was not found")
     else:
         pass
+    post_file, post_link = get_post_link(path)
     post_items: dict[str, str] = {
-        "file": basename(p=path),
+        "file": post_file,
+        "addr": post_link,
         "date": read_frontmatter(path=path).get("date"),
+        "published": read_frontmatter(path=path).get("published"),
         "fm": read_frontmatter(path=path),
         "html": read_markdown(path=path),
     }
@@ -62,8 +72,16 @@ def parse_all_posts() -> list[dict]:
     post_list: list[str] = get_md_file_list()
     parsed_post_list: list[dict] = list()
     for post in post_list:
-        parsed_post_list.append(parse_post(path=post))
-    return parsed_post_list
+        try:
+            post_data: dict[str, str] = parse_post(path=post)
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            pass
+        if post_data.get("published") is True:
+            parsed_post_list.append(post_data)
+    sorted_post_list: list[str] = sorted(parsed_post_list, key=itemgetter("date"), reverse=True)
+    return sorted_post_list
 
 
 def main() -> None:

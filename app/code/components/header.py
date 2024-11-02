@@ -15,10 +15,10 @@ def Navbar():
             ),
             fhtml.Ul(
                 fhtml.Li(
-                    fhtml.A("Yo ☺️", href="about-me"),
+                    fhtml.A("Yo ☺️", href="/about-me"),
                 ),
                 fhtml.Li(
-                    fhtml.A("Escribeme 💌", href="contact-us"),
+                    fhtml.A("Escribeme 💌", href="/contact-me"),
                 ),
             ),
             fhtml.Ul(

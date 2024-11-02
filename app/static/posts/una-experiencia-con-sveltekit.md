@@ -1,7 +1,7 @@
 ---
 title: Cómo nace este espacio feat. SvelteKit
 description: Una breve historia de cómo se gestó este espacio.
-date: '2024-5-14'
+date: '2024-05-14'
 categories:
   - sveltekit
   - hola

@@ -1,7 +1,7 @@
 ---
 title: La de siempre, la Intro
 description: Este es el punto de entrada a las locuras de mi cabeza.
-date: '2024-5-13'
+date: '2024-05-13'
 categories:
   - hola
   - mrthompson

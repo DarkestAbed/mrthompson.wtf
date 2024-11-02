@@ -1,7 +1,7 @@
 ---
 title: Me echaron
 description: Reflexiones sobre los procesos de desvinculación.
-date: '2024-5-24'
+date: '2024-05-24'
 categories:
   - pega
   - chamba

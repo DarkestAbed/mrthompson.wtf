@@ -2,8 +2,10 @@
 
 from fasthtml.common import FastHTML, picolink, Style, serve
 
-from code.site.home import home as homepage
 from code.site.about import about as aboutpage
+from code.site.contact import contactme
+from code.site.home import home as homepage
+from code.site.posts import retrieve_post as postpage
 
 
 css = Style(
@@ -11,6 +13,7 @@ css = Style(
 )
 
 app = FastHTML(
+    debug=True,
     hdrs=(
         picolink,
         css,
@@ -28,8 +31,21 @@ def page2():
     return aboutpage()
 
 
+@app.get("/contact-me")
+def page2():
+    return contactme()
+
+
+@app.get("/post/{title}")
+def get_post(title: str):
+    return postpage(title=title)
+
+
 def main() -> None:
-    serve()
+    serve(
+        host="0.0.0.0",
+        port=8003,
+    )
     return None
 
 

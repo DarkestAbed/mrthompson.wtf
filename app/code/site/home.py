@@ -2,6 +2,7 @@
 
 import fasthtml.common as fhtml
 
+from os.path import basename
 from typing import Any
 
 from code.components.footer import Footer
@@ -14,7 +15,10 @@ def post_list(input_list: list[dict]) -> Any:
     def parse_post_item(obj: dict) -> Any:
         fm: dict[str, str] = obj.get("fm")
         html_r: Any = fhtml.Div(
-            fhtml.H1(fm.get("title")),
+            fhtml.A(
+                fhtml.H1(fm.get("title")),
+                href=f"/post/{obj.get('addr')}",
+            ),
             fhtml.Em(fm.get("date")),
             fhtml.P(f"{fm.get('description')}"),
             fhtml.Hr(),
@@ -46,32 +50,16 @@ def home():
                 ),
             ),
             fhtml.Main(
-                    fhtml.Article(
-                        fhtml.Div("Primera seccion: intro"),
-                    ),
-                    # this is a test component
-                    # TODO: remove
-                    fhtml.Article(
-                        fhtml.P("Segunda seccion: testeos"),
-                        fhtml.Div(
-                            "Aqui hay algo de texto ",
-                            fhtml.A("Un link", href="https://mrthompson.xyz"),
-                        ),
-                        fhtml.Div(
-                            fhtml.Img(src="https://placehold.co/200"),
-                        ),
-                    ),
                     # this is the REAL second component
                     fhtml.Article(
                         posts,
                     ),
                     # third component is blogpost categories
                     fhtml.Article(
-                        fhtml.P("Tercera seccion: categorias"),
+                        fhtml.H2("Categorias:"),
+                        fhtml.H4("Lo que andas buscando lo encuentras aca"),
+                        fhtml.P("Lorem ipsum detrus hominem"),
                     ),
-                    fhtml.Article(
-                        fhtml.P("Cuarta seccion: articulos"),
-                    )
             ),
             Footer(),
             cls="container",

@@ -1,7 +1,7 @@
 ---
 title: Un contador en Markdown 🤔
 description: Estoy siguiendo un tutorial, no juzguéis.
-date: '2024-5-11'
+date: '2024-05-11'
 categories:
   - svelte
   - sveltekit
