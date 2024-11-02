@@ -1,6 +1,6 @@
 ---
 title: Doscientos años sin responsabilidad afectiva
-description: Desde los 90s hasta la anarquía relacional: un viaje por las relaciones.
+description: "Desde los 90s hasta la anarquía relacional: un viaje por las relaciones."
 date: '2024-9-12'
 categories:
   - relaciones

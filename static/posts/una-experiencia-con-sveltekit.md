@@ -23,7 +23,6 @@ Y Mí Mismo me respondió:
 
 _Mi Mismo no es particularmente amable. Le apodé "Lotso" hace algún tiempo, porque es rosadito y felpudo y un culiado, como el personaje de Toy Story:_
 
-
 <iframe title="lotso-gif" src="https://giphy.com/embed/wBDmRXskq8H3W" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/disney-pixar-disney-toy-story-3-wBDmRXskq8H3W">via GIPHY</a>
 
 Entonces, me puse a buscar tutoriales de cómo crear blogs usando Javascript y desarrollo moderno. Deseché las ideas de React y Vue y Next.js, porque son MUCHÍSIMO código y mucho tiempo de configuración inicial. O lo que, en ese momento, sentí que era una cantidad ridícula de tiempo para iniciar y configurar, versus algo en HTML plano.
@@ -39,9 +38,11 @@ Así que seguí el tutorial, le puse un poco de mi cosecha, y **PAF nació Choca
 Honest? Ahora quiero hacer todo el front en Svelte + SvelteKit. Recomiendo ENORMEMENTE aprenderlo, usarlo, divertirse con él, y dejar de lado Tailwind, React, NextJS, y toda esa majamama de weás difíciles y sobrecomplicadas, porque **no existe la bala plateada en tecnología**. Cada herramienta tiene su lugar y su caso de uso, y es fundamental que tengamos eso siempre como perspectiva.
 
 &NewLine;
+
 ```ts
 function developWithSvelte(name: string) {
-	console.log(`Hey ${name}! 👋 Go learn Svelte! 🙌🏽`)
+    console.log(`Hey ${name}! 👋 Go learn Svelte! 🙌🏽`)
 }
 ```
+
 Esa es mi historia con SvelteKit, en un nutshell. La próxima historia será para la próxima. Besitos!

@@ -10,13 +10,14 @@ published: true
 
 ## Markdown
 
-Hello friend 🧑🏽‍💻 
+Hello friend 🧑🏽‍💻
 
 &NewLine;
+
 ```ts
 function greet(name: string) {
-	console.log(`Hey ${name}! 👋`)
-}
+    console.log(`Hey ${name}! 👋`)
+} 
 ```
 
 Mister Thompson de este lado. Para quienes no me conocen, soy un tecnologista, político, opinionado, poeta, músico, y varias cosas más, que abrió este espacio para darle una voz y sentido a las voces de su cabeza.
