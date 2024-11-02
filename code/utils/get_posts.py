@@ -3,7 +3,7 @@
 from frontmatter import load
 from markdown import markdown
 from os import getcwd, listdir
-from os.path import exists, join
+from os.path import basename, exists, join
 
 
 def get_md_file_list() -> list[str]:
@@ -49,17 +49,18 @@ def parse_post(path: str) -> list[str, str, str]:
         raise FileNotFoundError(f"Post located on '{path}' was not found")
     else:
         pass
-    post_items: list[str, str, str] = [
-        path,
-        read_frontmatter(path=path),
-        read_markdown(path=path),
-    ]
+    post_items: dict[str, str] = {
+        "file": basename(p=path),
+        "date": read_frontmatter(path=path).get("date"),
+        "fm": read_frontmatter(path=path),
+        "html": read_markdown(path=path),
+    }
     return post_items
 
 
-def parse_all_posts() -> list[list]:
+def parse_all_posts() -> list[dict]:
     post_list: list[str] = get_md_file_list()
-    parsed_post_list: list[list] = list()
+    parsed_post_list: list[dict] = list()
     for post in post_list:
         parsed_post_list.append(parse_post(path=post))
     return parsed_post_list
