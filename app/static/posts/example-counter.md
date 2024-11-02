@@ -8,9 +8,11 @@ categories:
 published: true
 ---
 
-<script>
+<div>
+<pre><code>
   import Counter from './counter.svelte'
-</script>
+</pre></code>
+</div>
 
 ## Counter
 

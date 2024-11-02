@@ -37,12 +37,12 @@ Así que seguí el tutorial, le puse un poco de mi cosecha, y **PAF nació Choca
 
 Honest? Ahora quiero hacer todo el front en Svelte + SvelteKit. Recomiendo ENORMEMENTE aprenderlo, usarlo, divertirse con él, y dejar de lado Tailwind, React, NextJS, y toda esa majamama de weás difíciles y sobrecomplicadas, porque **no existe la bala plateada en tecnología**. Cada herramienta tiene su lugar y su caso de uso, y es fundamental que tengamos eso siempre como perspectiva.
 
-&NewLine;
-
-```ts
+<div>
+<pre><code>
 function developWithSvelte(name: string) {
     console.log(`Hey ${name}! 👋 Go learn Svelte! 🙌🏽`)
 }
-```
+</code></pre>
+</div>
 
 Esa es mi historia con SvelteKit, en un nutshell. La próxima historia será para la próxima. Besitos!

@@ -1,6 +1,12 @@
 # mrthompson.wtf/main.py
 
-from fasthtml.common import FastHTML, picolink, Style, serve
+from fasthtml.common import (
+    FastHTML,
+    HighlightJS,
+    picolink,
+    Style,
+    serve,
+)
 
 from code.site.about import about as aboutpage
 from code.site.contact import contactme
@@ -11,10 +17,20 @@ from code.site.posts import retrieve_post as postpage
 css = Style(
     ':root {--pico-font-size:90%,--pico-font-familly:Pacifico, cursive;}'
 )
+highlight = HighlightJS(
+        langs=[
+            "python",
+            "javascript",
+            "html",
+            "css"
+        ]
+    )
+
 
 app = FastHTML(
     debug=True,
     hdrs=(
+        highlight,
         picolink,
         css,
     ),
