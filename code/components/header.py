@@ -2,6 +2,7 @@
 
 import fasthtml.common as fhtml
 
+
 def Navbar():
     navbar = (
         fhtml.Nav(
