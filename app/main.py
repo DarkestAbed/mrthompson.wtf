@@ -7,6 +7,7 @@ from fasthtml.common import (
     Style,
     serve,
 )
+from os import environ
 
 from code.site.about import about as aboutpage
 from code.site.contact import contactme
@@ -60,7 +61,7 @@ def get_post(title: str):
 def main() -> None:
     serve(
         host="0.0.0.0",
-        port=8003,
+        port=environ.get("PORT", default=8003),
     )
     return None
 

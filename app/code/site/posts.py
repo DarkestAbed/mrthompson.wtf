@@ -39,7 +39,7 @@ def retrieve_post(title: str) -> AnyStr:
             fhtml.Main(
                 fhtml.H1(f"{post.get('title')}"),
                 fhtml.H4(post.get("desc")),
-                fhtml.H6(f"Burped on {post.get("date")}"),
+                fhtml.H6(f"Burped on {post.get('date')}"),
                 # this is the REAL second component
                 fhtml.NotStr(
                     *[ post.get("html") ],

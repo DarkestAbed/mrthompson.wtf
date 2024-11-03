@@ -8,7 +8,7 @@ from os.path import basename, exists, join
 
 
 def get_md_file_list() -> list[str]:
-    POSTS_PATH: str = join(getcwd(), "app", "static", "posts")
+    POSTS_PATH: str = join(getcwd(), "static", "posts")
     if not exists(POSTS_PATH):
         raise FileNotFoundError(f"Path with posts '{POSTS_PATH}' is not found on server")
     else:
